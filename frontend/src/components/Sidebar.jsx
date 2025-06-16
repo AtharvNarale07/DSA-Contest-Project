@@ -4,7 +4,8 @@ import { useAuthStore } from "../store/useAuthStore";
 import { useNavigate, Link } from "react-router-dom";
 
 export const Sidebar = () => {
-  const { logout } = useAuthStore();
+  const { authUser, logout } = useAuthStore();
+  const isAdmin = authUser?.role === "ADMIN";
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const navigate = useNavigate();
   const handleLogout = async (e) => {
@@ -53,6 +54,15 @@ export const Sidebar = () => {
             </div>
           </Link>
         </div>
+
+        {isAdmin && (
+          <Link to="/metrics">
+            <div className="sidebar-item">
+              <span className="sidebar-icon">📊</span>
+              <span className="sidebar-text">Metrics</span>
+            </div>
+          </Link>
+        )}
 
         <div className="sidebar-footer">
           <button onClick={handleLogout} className="sidebar-logout">

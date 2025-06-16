@@ -13,6 +13,7 @@ import { SignUp } from "./pages/SignUp";
 import { Dashboard } from "./pages/Dashboard";
 import Playlists from "./pages/Playlists";
 import Profile from "./pages/Profile";
+import MetricsPage from "./pages/MetricsPage";
 import { Analytics } from "@vercel/analytics/react";
 import { useAuthStore } from "./store/useAuthStore";
 import ToastContainer from "./components/ToastContainer";
@@ -167,6 +168,15 @@ function AppRoutes() {
           }
         />
       </Route>
+
+      <Route
+        path="/metrics"
+        element={
+          <ProtectedRoute>
+            <MetricsPage />
+          </ProtectedRoute>
+        }
+      />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );

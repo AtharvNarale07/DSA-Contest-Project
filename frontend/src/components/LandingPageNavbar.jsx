@@ -46,7 +46,7 @@ export const LandingPageNavbar = () => {
         delay: 0.2,
       }}
     >
-      <div className="flex justify-between items-center px-4 py-2 rounded-full w-[95%] mx-auto">
+      <div className="flex justify-between items-center px-4 py-2 w-[98%] mx-auto">
         <div className="logo w-[100px] h-auto z-50">
           <img src={logo} alt="logo" />
         </div>

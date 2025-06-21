@@ -86,6 +86,23 @@ const StyledWrapper = styled.div`
   .toggle:checked + .slider:before {
     transform: translateX(30px);
   }
+  @media (max-width: 768px) {
+    .switch {
+      width: 40px;
+      height: 16px;
+      gap: 20px;
+    }
+
+    .slider:before {
+      height: 16px;
+      width: 16px;
+      bottom: 0px;
+    }
+
+    .toggle:checked + .slider:before {
+      transform: translateX(24px);
+    }
+  }
 `;
 
 export default Switch;

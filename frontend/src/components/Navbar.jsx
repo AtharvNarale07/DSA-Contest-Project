@@ -39,18 +39,18 @@ export const Navbar = () => {
         initial={{ opacity: 0, y: -60 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "backInOut" }}
-        className="navbar flex justify-between items-center px-3 py-2"
+        className="navbar flex justify-between items-center px-3 sm:py-2 py-1"
       >
         <Link to="/dashboard">
           <div className="flex items-center gap-4">
-            <div className="logo w-[50px] h-auto z-50">
+            <div className="logo w-[50px] sm:inline-flex hidden h-auto z-50">
               <img src={logo} alt="logo" />
             </div>
-            <h1 className="text-lg  nulshock">Arkham Labs</h1>
+            <h1 className="sm:text-lg text-sm  nulshock">Arkham Labs</h1>
           </div>
         </Link>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center sm:gap-4 gap-2">
           <Switch />
           <p className="text-sm  neue-reg">
             {!isAdmin && (
@@ -60,14 +60,15 @@ export const Navbar = () => {
           {isAdmin && (
             <Link
               to="/add-problem"
-              className="add-btn  px-4 py-2 neue-med rounded-md transition duration-300 ease-in-out text-sm"
+              className="add-btn px-2 sm:px-4 py-2 neue-med rounded-md transition duration-300 ease-in-out text-sm"
             >
-              [Alt+A] &nbsp; Add Problem
+              <span className="sm:inline-flex hidden">[Alt+A]</span> &nbsp; Add
+              Problem
             </Link>
           )}
           <button
             onClick={handleLogout}
-            className="px-4 py-2 rounded-lg neue-med hover:bg-red-500/50 transition-all  text-sm"
+            className="px-4 py-2 rounded-lg neue-med hover:bg-red-500/50 transition-all text-sm hidden sm:inline-flex"
           >
             Logout
           </button>

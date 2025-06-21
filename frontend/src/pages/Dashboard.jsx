@@ -148,20 +148,20 @@ export const Dashboard = () => {
             </span>
           </div>
           <div className="flex flex-col gap-1">
-            <h3 className="text-3xl text-black dark:text-white neue-med">
+            <h3 className="sm:text-3xl text-xl text-black dark:text-white neue-med">
               Welcome Back, {authUser?.name} ✨
             </h3>
-            <p className="text-base text-black dark:text-white neue-reg">
+            <p className="sm:text-base text-sm text-black dark:text-white neue-reg">
               {currentDateTime}
             </p>
-            <p className="text-sm text-black/80 dark:text-white/80 neue-reg mb-2">
+            <p className="sm:text-sm text-xs text-black/80 dark:text-white/80 neue-reg mb-2">
               {authUser?.email} <br />
             </p>
             <button
               onClick={() => {
                 setIsCreatePlaylistModalOpen(true);
               }}
-              className="text-sm text-black/80 dark:text-white/80 dark:bg-[#ffffff2a] bg-[#0000002a] font-mono tracking-tighter uppercase hover:text-red-700 dark:hover:text-red-500 hover:bg-[#ffffff5e] dark:hover:bg-[#0e0e0e5e] duration-200 ease-out cursor-pointer w-fit"
+              className="sm:text-sm text-xs text-black/80 dark:text-white/80 dark:bg-[#ffffff2a] bg-[#0000002a] font-mono tracking-tighter uppercase hover:text-red-700 dark:hover:text-red-500 hover:bg-[#ffffff5e] dark:hover:bg-[#0e0e0e5e] duration-200 ease-out cursor-pointer w-fit"
             >
               <span>[C]</span> Create Playlist
             </button>

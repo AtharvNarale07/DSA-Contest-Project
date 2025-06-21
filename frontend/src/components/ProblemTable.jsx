@@ -218,7 +218,7 @@ const ProblemTable = ({ problems, onProblemDeleted }) => {
       >
         <table className="w-full">
           <thead>
-            <tr className="border-b border-white/30">
+            <tr className="border-b border-white/30 text-sm sm:text-base">
               <th className="text-left py-2 text-black/80 dark:text-white/80 neue-med">
                 Sno.
               </th>
@@ -228,13 +228,13 @@ const ProblemTable = ({ problems, onProblemDeleted }) => {
               <th className="text-left py-2 text-black/80 dark:text-white/80 neue-med">
                 Title
               </th>
-              <th className="text-left py-2 text-black/80 dark:text-white/80 neue-med">
+              <th className="text-left py-2 text-black/80 dark:text-white/80 neue-med sm:table-cell hidden">
                 Tags
               </th>
-              <th className="text-left py-2 text-black/80 dark:text-white/80 neue-med">
+              <th className="text-left py-2 text-black/80 dark:text-white/80 neue-med sm:table-cell hidden">
                 Company
               </th>
-              <th className="text-left py-2 text-black/80 dark:text-white/80 neue-med">
+              <th className="text-left py-2 text-black/80 dark:text-white/80 neue-med sm:table-cell hidden">
                 Difficulty
               </th>
               <th className="text-left py-2 text-black/80 dark:text-white/80 neue-med">
@@ -271,7 +271,7 @@ const ProblemTable = ({ problems, onProblemDeleted }) => {
                   <td className="py-2 text-black dark:text-white hover:underline">
                     <Link to={`/problem/${problem.id}`}>{problem.title}</Link>
                   </td>
-                  <td className="py-2">
+                  <td className="py-2 sm:table-cell hidden">
                     <div className="flex flex-wrap gap-2">
                       {problem.tags?.map((tag) => (
                         <span
@@ -284,7 +284,7 @@ const ProblemTable = ({ problems, onProblemDeleted }) => {
                       ))}
                     </div>
                   </td>
-                  <td>
+                  <td className="sm:table-cell hidden">
                     <div className="flex flex-wrap gap-1">
                       {problem.companyTags && problem.companyTags.length > 0 ? (
                         <>
@@ -319,7 +319,7 @@ const ProblemTable = ({ problems, onProblemDeleted }) => {
                       )}
                     </div>
                   </td>
-                  <td className="py-2">
+                  <td className="py-2 sm:table-cell hidden">
                     <span
                       className={`  px-2 py-1 rounded-full ${
                         problem.difficulty === "EASY"

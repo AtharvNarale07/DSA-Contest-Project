@@ -140,13 +140,13 @@ export const FirstPage = () => {
           </motion.p>
 
           <motion.h1
-            className="text-xl sm:text-2xl font-bold text-center hero-text text-white"
+            className="text-lg sm:text-2xl font-bold text-center hero-text text-white"
             variants={headingVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
           >
             Welcome to <br />
-            <span className="sm:text-7xl text-6xl">ARKHAM LABS</span>
+            <span className="sm:text-7xl text-5xl">ARKHAM LABS</span>
           </motion.h1>
 
           <motion.p

@@ -47,7 +47,7 @@ export const LandingPageNavbar = () => {
       }}
     >
       <div className="flex justify-between items-center px-4 py-2 w-[98%] mx-auto">
-        <div className="logo w-[100px] h-auto z-50">
+        <div className="logo sm:w-[100px] w-[72px] h-auto z-50 sm:my-0 my-1">
           <img src={logo} alt="logo" />
         </div>
 
@@ -114,7 +114,7 @@ export const LandingPageNavbar = () => {
           ease: "anticipate",
         }}
       >
-        <ul className="pt-12 pb-8 flex flex-col items-center neue-med">
+        <ul className="pt-12 pb-8 flex flex-col items-center neue-med text-black">
           {navLinks.map((link) => (
             <motion.li
               key={link.id}

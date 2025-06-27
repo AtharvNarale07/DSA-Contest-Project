@@ -351,7 +351,16 @@ export const Footer = () => {
                 repeatType: "reverse",
               }}
             >
-              Train in the Shadows. Strike in the Interview.
+              Made with Pain 💖 by{" "}
+              <a
+                href="https://www.linkedin.com/in/kapilovsky/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#ffffff]/80 hover:text-[#ffffff] underline"
+              >
+                Kapil
+              </a>{" "}
+              in Chandigarh,India
             </motion.p>
           </motion.div>
         </motion.div>

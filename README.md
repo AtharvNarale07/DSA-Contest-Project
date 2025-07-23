@@ -1,24 +1,3 @@
-# Arkham Labs
-
-<div align="center">
-  <img src="frontend/public/ArkhamBanner.png" alt="Arkham Labs Banner" width="100%">
-  
-  <p align="center">
-    <strong>DC-inspired coding platform for mastering data structures and algorithms</strong>
-  </p>
-  
-  <p align="center">
-    🌃 Train in the shadows. Strike in the interview. 🗲
-  </p>
-
-  <p align="center">
-    <a href="https://arkhamlabs.live">🌐 Live Demo</a> •
-    <a href="https://youtu.be/Rczr7Lizdy0?feature=shared">📹 Project Walkthrough</a> •
-    <a href="https://youtu.be/1-ANY5vd8m4?feature=shared">🎬 Hitesh sir's Reaction</a>
-  </p>
-</div>
-
----
 
 ## 🎯 Project Overview
 
@@ -251,15 +230,4 @@ We welcome contributions from fellow vigilantes! Here's how you can help:
 - **Judge0** - For providing the code execution infrastructure
 - **Liveblocks** - For real-time collaboration capabilities
 
-## Contact
 
-**Kapil** - [@Kapilovsky](https://twitter.com/Kapilovsky)
-
-Live Demo: [https://arkhamlabs.live](https://arkhamlabs.live)
-
----
-
-<div align="center">
-  <p><strong>Train in the Shadows. Strike in the Interview.</strong></p>
-  <p>Built with Pain <3 </p>
-</div>

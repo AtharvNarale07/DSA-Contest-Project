@@ -82,10 +82,10 @@ As a passionate Batman fan, I wanted to create something unique that goes beyond
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/prakashdeshmuk/prakashdeshmuk.git
-   cd prakashdeshmuk
-cd backend
-npm install
+   git clone https://github.com/AtharvNarale07/DSA-Contest-Project.git
+   cd DSA-Contest-Project/backend
+   npm install
+
 
 # Setup environment variables
 cp .env.sample .env

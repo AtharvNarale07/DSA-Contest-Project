@@ -1,7 +1,7 @@
 
 ## 🎯 Project Overview
 
-Arkham Labs is a Batman-themed coding sanctuary where developers train like the League of Shadows. Built for the **ChaiCode LeetLab Challenge**, this platform combines the intensity of Gotham with cutting-edge web technologies to deliver an immersive coding experience.
+This is a Batman-themed coding sanctuary where developers train like the League of Shadows. Built for the **ChaiCode LeetLab Challenge**, this platform combines the intensity of Gotham with cutting-edge web technologies to deliver an immersive coding experience.
 
 As a passionate Batman fan, I wanted to create something unique that goes beyond conventional coding platforms. Every component was crafted from scratch, backgrounds designed in Figma, and animations carefully implemented with Framer Motion to create a truly immersive experience.
 
